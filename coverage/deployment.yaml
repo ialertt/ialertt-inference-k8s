@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: inferece-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: inferece-app
+  template:
+    metadata:
+      labels:
+        app: inferece-app
+    spec:
+      containers:
+        - image: 359478566939.dkr.ecr.us-east-1.amazonaws.com/ialertt/develop:0
+          name: inferece-app
