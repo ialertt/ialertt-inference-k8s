@@ -13,5 +13,5 @@ spec:
         app: inferece-app
     spec:
       containers:
-        - image: 359478566939.dkr.ecr.us-east-1.amazonaws.com/inference:0
+        - image: 359478566939.dkr.ecr.us-east-1.amazonaws.com/ialertt/develop:latest
           name: inferece-app
